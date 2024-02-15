@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="426.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csd214_bipanalab1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+
+    <Label fx:id="welcomeText" />
+   <TableView fx:id="language" prefHeight="200.0" prefWidth="158.0">
+     <columns>
+       <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+       <TableColumn fx:id="Instructor" prefWidth="75.0" text="Instructor" />
+         <TableColumn fx:id="Language" prefWidth="75.0" text="Language" />
+         <TableColumn fx:id="Session" prefWidth="75.0" text="Session" />
+     </columns>
+   </TableView>
+</VBox>
